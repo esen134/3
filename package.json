@@ -1,7 +1,7 @@
 {
   "name": "bybit-spike-watcher",
-  "version": "0.1.0",
-  "description": "Minimal Bybit Spike Watcher (Node.js + static frontend).",
+  "version": "1.0.1",
+  "description": "Real-time Bybit futures spike watcher with WebSocket alerts.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
@@ -9,9 +9,10 @@
   "dependencies": {
     "express": "^4.18.2",
     "ws": "^8.13.0",
-    "node-fetch": "^2.6.7"
+    "dotenv": "^16.4.0"
   },
   "engines": {
-    "node": ">=16"
-  }
-}
+    "node": ">=18.0.0"
+  },
+  "author": "your-name",
+  
