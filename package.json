@@ -15,4 +15,5 @@
     "node": ">=18.0.0"
   },
   "author": "your-name",
-  
+  "license": "MIT"
+}
