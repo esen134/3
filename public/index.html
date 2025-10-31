@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bybit Spike Watcher</title>
+  <style>
+    body { font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin: 0; padding: 20px; background:#f5f7fb; color:#111 }
+    h1 { margin: 0 0 12px 0; font-size:20px }
+    .layout { display: grid; grid-template-columns: 3fr 1fr; gap: 12px; align-items: start; }
+    .up-grid { display:grid; grid-template-columns: repeat(3,1fr); gap:10px; }
+    .card { background: #fff; border-radius: 8px; padding:10px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+    .small { font-size:12px; color:#666 }
+    .symbol { font-weight:700; font-size:14px }
+    .cols { display:flex; gap:8px; }
+    #status { font-size:12px; color:#666; margin-bottom:8px }
+    .down-list { display:flex; flex-direction:column; gap:8px }
+  </style>
+</head>
+<body>
+  <h1>Bybit Spike Watcher</h1>
+  <div id="status">Connecting...</div>
+  <div class="layout">
+    <div>
+      <div style="margin-bottom:8px"><strong>Up (3 columns)</strong></div>
+      <div id="up" class="up-grid"></div>
+    </div>
+    <div>
+      <div style="margin-bottom:8px"><strong>Down</strong></div>
+      <div id="down" class="down-list"></div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
